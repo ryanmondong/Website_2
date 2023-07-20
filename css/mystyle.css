@@ -23,6 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
+    z-index: 1;
 }
 
 .nav-title {
@@ -252,6 +253,7 @@ div #coffee {
     margin-top: 50px;
     width: 60%;
     justify-content: center;
+    text-align: center;
 }
 
 .buttons {
