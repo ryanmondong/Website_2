@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* navigation bar */
+
+.nav {
+    background-color: rgba(255, 0, 0, 1);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.nav-title {
+    color: white;
+    font-size: 28px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+}
+
+li {
+    float: right;
+}
+
+li #Ryan {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-left: 10px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+body {
+    margin: 0;
+}
+
+/* regarding the introduction section */
+
+#Introduction {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%)
+}
+
+/* texts in introduction section */
+
+div #Name {
+    font-size: 70px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 41vh;
+}
+
+div #Career {
+    font-size: 40px;
+    font-style: italic;
+    color: rgba(255, 0, 0, 0.466);
+    margin: auto;
+    text-align: center;
+}
+
+/* texts in projects */
+
+#test {
+    background-color: #45567d;
+    font-size: 20px;
+    padding: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 6vh;
+}
+
+.title {
+    color: white;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+#for-title {
+    width: 45vh;
+}
+
+/* regarding images in a table*/
+
+#projects {
+    background-color: #45567d;
+    padding-bottom: 100px;
+}
+
+.projects {
+    width: 30%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projects a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+}
+
+.row {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+}
+
+.projects img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    background: #3a3d40;
+    margin-top: -5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-title:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+.card-title a {
+    color: black;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-title a {
+    color: white;
+}
+
+/* regarding show all button*/
+
+#show-all {
+    text-align: center;
+    margin: auto;
+    padding: 20px 40px;
+    background: #3a3d40;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#show-all:hover {
+    background: red;
+    color: black;
+}
+
+#show-all a:hover, a:active {
+    background-color: red;
+}
+
+/* regarding the contact section*/
+
+#contact {
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    width: 100%;
+    height: 90vh;
+}
+
+#end {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%) */
+}
+
+div #work-together {
+    font-size: 70px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 25vh;
+}
+
+div #coffee {
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 0, 0, 0.466);
+    margin: auto;
+    text-align: center;
+}
+
+/* regarding the contact buttons */
+
+#contact-links {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    justify-content: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+i:hover {
+    background-color: black;
+}
+
+#contact-links a {
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0;
+    color: white;
+}
+
+#contact-links a:hover {
+    color: red;
+    text-align: center;
+    transition: 0.3s all ease-in-out;
+}
+
+/* regarding the ending sections */
+
+footnote {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    padding-top: 20px;
+    border-top: 6px solid red;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+p#fake-portfolio {
+    font-size: 25px;
+    color: white;
+    margin-bottom: -5px;
+}
